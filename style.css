@@ -583,6 +583,20 @@ body {
     min-width: 500px;
 }
 
+@media screen and (max-width: 900px) {
+    .reviews__title {
+        margin-bottom: 24px;
+    }
+
+    .ransom__text-item {
+        margin-bottom: 16px;
+    }
+
+    .ransom__image {
+        min-width: 100%;
+    }
+}
+
 /* Reviews */
 .reviews__title {
     margin-bottom: 40px;
@@ -693,7 +707,7 @@ body {
 /* Footer */
 .footer {
     background-color: #0B0B0B;
-    height: 68px;
+    min-height: 68px;
     margin-top: 160px;
 
     display: flex;
@@ -706,9 +720,16 @@ body {
 @media screen and (max-width: 900px) {
     .footer {
         margin-top: 120px;
+        padding: 24px 16px;
+
+        flex-direction: column;
     }
 
     .footer__logo {
         display: none;
+    }
+
+    .footer__phone {
+        margin-bottom: 16px;
     }
 }
