@@ -48,6 +48,10 @@ body {
     font-weight: 500;
 }
 
+.section__subtitle {
+    font-size: 24px;
+}
+
 .section__image {
     flex: 1;
 }
@@ -69,6 +73,10 @@ body {
 
     .section__title {
         font-size: 32px;
+    }
+
+    .section__subtitle {
+        font-size: 20px;
     }
 }
 
@@ -115,17 +123,29 @@ body {
     display: flex;
     align-items: center;
 
+    text-decoration: none;
+
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .call-button img {
     margin-right: 10px;
+    transition: filter 0.3s;
 }
 
 .call-button * {
     color: #111111;
     font-size: 28px;
     font-weight: 500;
+    text-decoration: none;
+}
+
+@media screen and (hover: hover) {
+    .call-button:hover {
+        background-color: #ff8b7b;
+        background-color: #fff;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -536,6 +556,31 @@ body {
     .services__title {
         margin-bottom: 24px;
     }
+}
+
+/* Ransom */
+.ransom__title {
+    margin-bottom: 8px;
+}
+
+.ransom__subtitle {
+    margin-bottom: 40px;
+}
+
+.ransom__text {
+    max-width: 700px;
+}
+
+.ransom__text-item {
+    margin-bottom: 24px;
+}
+
+.ransom__text-item span {
+    color: #FF725E;
+}
+
+.ransom__image {
+    min-width: 500px;
 }
 
 /* Reviews */
